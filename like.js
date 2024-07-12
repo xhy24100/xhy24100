@@ -1,30 +1,4 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>canvas爱心</title>
-    <style>
-        html, body {
-            height: 100%;
-            padding: 0;
-            margin: 0;
-            background: #000;
-        }
-        canvas {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-</head>
-<body>
 
-<canvas id="pinkboard"></canvas>
-
-<script>
-    /*
-     * Settings
-     */
     var settings = {
         particles: {
             length:   500, // maximum amount of particles
@@ -34,7 +8,6 @@
             size:      30, // particle size in pixels
         },
     };
-
     /*
      * RequestAnimationFrame polyfill by Erik M?ller
      */
@@ -257,9 +230,4 @@
             onResize();
             render();
         }, 10);
-    })(document.getElementById('pinkboard'));</script>
-
-</body>
-</html>
-
-
+    })(document.getElementById('pinkboard'))
