@@ -1,0 +1,1 @@
+import{c as e,o as t,a as s}from"./index-DQzA1sfF.js";const o={style:{height:"100%"}},a=s("iframe",{style:{width:"100%",height:"100vh"},src:"./public/valentine-master/index.html",frameborder:"0"},null,-1),r=[a],h={__name:"Home",setup(c){return(n,_)=>(t(),e("div",o,r))}};export{h as default};
