@@ -1,1 +1,0 @@
-import{c as e,a as t,b as a,o as s}from"./index-CYFlPH4x.js";const o={style:{height:"100%"}},r=a("iframe",{style:{width:"100%",height:"100vh"},src:"../../../public/valentine-master/index.html",frameborder:"0"},null,-1),l={__name:"Home",setup(c){return(n,i)=>(s(),e("div",o,[t(" 111 "),r]))}};export{l as default};
