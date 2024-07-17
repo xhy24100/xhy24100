@@ -126,6 +126,7 @@
 
   function event () {
     document.addEventListener('click', function (e) {
+      e.nativeEvent.preventDefault()
       textIndex++
       if (textIndex >= texts.length) {
         textIndex--
