@@ -1,27 +1,26 @@
 <template>
   <div style="height: 100%">
-    {{num}}
 <!--    <van-button type="primary">主要按钮</van-button>-->
 <!--   <div class="baioti">-->
 <!--     <router-link to="home">点击</router-link>-->
 <!--     <router-link to="home1">暂无</router-link>-->
 <!--   </div>-->
-<!--    <keep-alive class="content">-->
-<!--      <router-view></router-view>-->
-<!--    </keep-alive>-->
+    <keep-alive class="content">
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
 <script setup>
+import {getLongitudeLatitude} from './hooks/index.js'
 import {ref} from "vue";
-import {whater} from "@/ulits/request.js";
+import {water} from "@/ulits/http.js";
 import { useCounterStore } from '@/store/index'
 // 可以在组件中的任意位置访问 `store` 变量 ✨
 const store = useCounterStore()
-const num = ref()
-whater().then(res=>{
-  num.value = res.data;
-})
+const num = ref(0)
+water()
+
 </script>
 
 <style scoped lang="less">

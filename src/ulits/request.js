@@ -26,7 +26,7 @@ import axios from 'axios'
 // 创建axios实例
 const request = axios.create({
     // 这里可以放一下公用属性等。
-    baseURL: 'https://api.caiyunapp.com/v2.6', // 用于配置请求接口公用部分，请求时会自动拼接在你定义的url前面。
+    baseURL: '', // 用于配置请求接口公用部分，请求时会自动拼接在你定义的url前面。
     withCredentials: false, // 跨域请求时是否需要访问凭证
     timeout: 60 * 1000, // 请求超时时间
 

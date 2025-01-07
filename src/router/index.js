@@ -6,7 +6,7 @@ const routes=[
         path: '/home',
         name: 'home',
         meta:{
-            title:'爱情记录'
+            title:'爱心'
         },
         component: () => import('@/views/Home/Home.vue')        //路由懒加载按需导入
     },
@@ -14,7 +14,7 @@ const routes=[
         path: '/home1',
         name: 'home1',
         meta:{
-            title:'爱情宝典'
+            title:'新年快乐'
         },
         component: () => import('@/views/Home/Home1.vue')
     }

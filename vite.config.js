@@ -22,4 +22,14 @@ export default defineConfig({
       '@': resolve(__dirname, './src'),
     },
   },
+  server: {
+    proxy: {
+      ['/api']: {
+        target: 'http://localhost:9000',
+        changeOrigin: true, // 是否改变源地址
+        // rewrite: (path) => path.replace(/^\/api/, ''), // 重写路径
+        // 可以配置更多选项，如 logLevel, timeout 等
+      },
+    },
+  },
 })
